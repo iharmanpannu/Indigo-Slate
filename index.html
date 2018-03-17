@@ -59,8 +59,7 @@
                                             <i class="fas fa-handshake"></i>
                                         </span>
                                         SAFETY
-                                        <a class="main-nav-spans"  @click="safNavShow = !safNavShow"
-                                            href="#">
+                                        <a class="main-nav-spans" @click="safNavShow = !safNavShow" href="#">
                                             <i class="fas fa-angle-right"></i>
                                         </a>
                                     </li>
@@ -89,25 +88,28 @@
                                                             Reporting
                                                         </span>
 
-                                                        <a class="main-nav-spans" href="#">
+                                                        <a @click="repNavUl =!repNavUl" class="main-nav-spans" href="#">
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
                                                     </li>
-                                                    <ul class="sub-nav-ul">
-                                                        <li>
-                                                            <a href="#">I-21 Injury Reporting</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">ASAP Reporting</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">General ASAP Information</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Flight Attendent Incident Report</a>
-                                                        </li>
-                                                    </ul>
+                                                    <transition name="rep-nav">
 
+
+                                                        <ul class="sub-nav-ul" v-if="repNavUl">
+                                                            <li>
+                                                                <a href="#">I-21 Injury Reporting</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">ASAP Reporting</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">General ASAP Information</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Flight Attendent Incident Report</a>
+                                                            </li>
+                                                        </ul>
+                                                    </transition>
                                                 </li>
 
                                                 <li>

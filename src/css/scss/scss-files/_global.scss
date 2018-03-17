@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
 // font-family: 'Lato', sans-serif;
+// font-family:paytone one;
 
 html,
 body {
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
   box-sizing: border-box;
   color: #fff;
   word-spacing: 3px;
@@ -17,6 +20,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+  font-family: paytone one;
 }
 li {
   list-style-type: none;

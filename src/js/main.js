@@ -7,6 +7,7 @@ new Vue({
     show: false,
     active: false,
     subNavActive: false,
-    safNavShow: false
+    safNavShow: false,
+    repNavUl: false
   }
 });
