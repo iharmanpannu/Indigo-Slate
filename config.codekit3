@@ -108,6 +108,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/img\/plane.jpg": {
+		"ft": 16384,
+		"iS": 175082,
+		"oA": 0,
+		"oAP": "\/src\/img\/plane.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/test.html": {
 		"cB": 0,
 		"ft": 8192,

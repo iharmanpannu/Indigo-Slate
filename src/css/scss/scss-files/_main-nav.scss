@@ -1,10 +1,10 @@
 .main-nav {
   position: absolute;
-  height: 100%;
+  min-height: 100vh;
   width: 100vw;
   //   display: none;
   background: turquoise;
-  z-index: 10;
+  z-index: 1;
   .main-nav-header {
     height: 80px;
     // width: 100%;
@@ -52,20 +52,22 @@
 
 // Sub Nav Style
 .sub-nav-toggle {
-  display: none;
+  //   display: none;
   position: absolute;
   top: 0%;
   right: 0%;
   height: 100%;
   width: 90%;
+  z-index: 2;
 }
 .admin-nav-toggle {
-  display: none;
+  //   display: none;
   position: absolute;
   top: 0%;
   right: 0%;
   height: 100%;
   width: 90%;
+  z-index: 2;
 }
 .sub-nav {
   //   display: none;
