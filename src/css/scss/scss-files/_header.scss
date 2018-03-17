@@ -1,0 +1,66 @@
+.main-header {
+  position: relative;
+  flex-direction: column;
+  .main-header-menu {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: rgb(209, 209, 136);
+    .main-header-ul {
+      display: inline-flex;
+      justify-items: center;
+      h2 {
+        padding: 15px 0 15px 15px;
+        font-size: 1.5em;
+      }
+    }
+    .nav-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+      padding: 10px 35px 16px 0px;
+
+      span,
+      span:before,
+      span:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 35px;
+        height: 5px;
+        background: #fff;
+        border-radius: 1px;
+        transition: all 0.5s;
+      }
+
+      span:before {
+        top: -10px;
+      }
+
+      span:after {
+        bottom: -10px;
+      }
+
+      &.active {
+        span {
+          background: transparent;
+        }
+
+        span:before,
+        span:after {
+          top: 0;
+        }
+
+        span:before {
+          transform: rotate(45deg);
+        }
+
+        span:after {
+          top: 10px;
+          transform: translateY(-10px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
