@@ -5,6 +5,8 @@ new Vue({
     visible: false,
     home: true,
     show: false,
-    active: false
+    active: false,
+    subNavActive: false,
+    subNavShow: false
   }
 });
