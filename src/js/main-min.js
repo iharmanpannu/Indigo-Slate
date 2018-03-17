@@ -1,0 +1,1 @@
+new Vue({el:"#app",data:{visible:!1,home:!0,show:!1}});

@@ -56,6 +56,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/css\/scss\/scss-files\/_animations.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/css\/scss\/scss-files\/_animations.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/src\/css\/scss\/scss-files\/_global.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -117,6 +130,16 @@
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
+		},
+	"\/src\/js\/main-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/src\/js\/main.js": {
 		"ft": 64,

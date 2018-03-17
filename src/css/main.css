@@ -1,4 +1,19 @@
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
 @import url("https://fonts.googleapis.com/css?family=Lato");
+.slide-fade-enter-active {
+  transition: all 0.3s ease; }
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1); }
+
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0; }
+
+.active {
+  opacity: 1; }
+
 html,
 body {
   font-family: 'Lato', sans-serif;
@@ -32,6 +47,19 @@ a {
 .wrapper {
   background: blanchedalmond; }
 
+.home-page {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 4em 0;
+  z-index: -1;
+  background: cadetblue; }
+  .home-page h1 {
+    font-size: 1.6em;
+    margin-bottom: 0.7em; }
+  .home-page h4 {
+    font-size: 1.1em; }
+
 .container {
   position: relative; }
 
@@ -46,37 +74,41 @@ a {
       .main-header .main-header-menu .main-header-ul h2 {
         padding: 15px 0 15px 15px;
         font-size: 1.5em; }
-    .main-header .main-header-menu .nav-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 10;
-      padding: 10px 35px 16px 0px; }
-      .main-header .main-header-menu .nav-toggle span,
-      .main-header .main-header-menu .nav-toggle span:before,
-      .main-header .main-header-menu .nav-toggle span:after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 35px;
-        height: 5px;
-        background: #fff;
-        border-radius: 1px;
-        transition: all 0.5s; }
-      .main-header .main-header-menu .nav-toggle span:before {
-        top: -10px; }
-      .main-header .main-header-menu .nav-toggle span:after {
-        bottom: -10px; }
-      .main-header .main-header-menu .nav-toggle.active span {
-        background: transparent; }
-      .main-header .main-header-menu .nav-toggle.active span:before,
-      .main-header .main-header-menu .nav-toggle.active span:after {
-        top: 0; }
-      .main-header .main-header-menu .nav-toggle.active span:before {
-        transform: rotate(45deg); }
-      .main-header .main-header-menu .nav-toggle.active span:after {
-        top: 10px;
-        transform: translateY(-10px) rotate(-45deg); }
+
+.nav-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  padding: 10px 35px 16px 0px; }
+  .nav-toggle span,
+  .nav-toggle span:before,
+  .nav-toggle span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background: #fff;
+    border-radius: 1px;
+    transition: all 0.5s; }
+  .nav-toggle span:before {
+    top: -10px; }
+  .nav-toggle span:after {
+    bottom: -10px; }
+  .nav-toggle.active span {
+    background: transparent; }
+  .nav-toggle.active span:before,
+  .nav-toggle.active span:after {
+    top: 0; }
+  .nav-toggle.active span:before {
+    transform: rotate(45deg); }
+  .nav-toggle.active span:after {
+    top: 10px;
+    transform: translateY(-10px) rotate(-45deg); }
+
+.active {
+  opacity: 1; }
 
 .main-nav {
   position: absolute;

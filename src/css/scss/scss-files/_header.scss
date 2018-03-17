@@ -13,53 +13,56 @@
         font-size: 1.5em;
       }
     }
-    .nav-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 10;
-      padding: 10px 35px 16px 0px;
+  }
+}
+.nav-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  padding: 10px 35px 16px 0px;
 
-      span,
-      span:before,
-      span:after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 35px;
-        height: 5px;
-        background: #fff;
-        border-radius: 1px;
-        transition: all 0.5s;
-      }
+  span,
+  span:before,
+  span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background: #fff;
+    border-radius: 1px;
+    transition: all 0.5s;
+  }
 
-      span:before {
-        top: -10px;
-      }
+  span:before {
+    top: -10px;
+  }
 
-      span:after {
-        bottom: -10px;
-      }
+  span:after {
+    bottom: -10px;
+  }
 
-      &.active {
-        span {
-          background: transparent;
-        }
+  &.active {
+    span {
+      background: transparent;
+    }
 
-        span:before,
-        span:after {
-          top: 0;
-        }
+    span:before,
+    span:after {
+      top: 0;
+    }
 
-        span:before {
-          transform: rotate(45deg);
-        }
+    span:before {
+      transform: rotate(45deg);
+    }
 
-        span:after {
-          top: 10px;
-          transform: translateY(-10px) rotate(-45deg);
-        }
-      }
+    span:after {
+      top: 10px;
+      transform: translateY(-10px) rotate(-45deg);
     }
   }
+}
+.active {
+  opacity: 1;
 }
