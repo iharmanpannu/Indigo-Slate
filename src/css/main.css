@@ -30,28 +30,14 @@ a {
     color: #fff; }
 
 .wrapper {
-  background: blanchedalmond;
+  background: blanchedalmond; }
+
+.container {
   position: relative; }
 
-.home-page {
-  text-align: center;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  padding: 4em 0;
-  z-index: -1;
-  background: cadetblue; }
-  .home-page h1 {
-    font-size: 1.6em;
-    margin-bottom: 0.7em; }
-  .home-page h4 {
-    font-size: 1.1em; }
-
 .main-header {
-  position: relative;
-  flex-direction: column; }
+  display: block; }
   .main-header .main-header-menu {
-    position: relative;
     width: 100%;
     height: 60px;
     background: #d1d188; }
@@ -95,14 +81,12 @@ a {
 
 .main-nav {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-  display: none;
   background: turquoise;
   z-index: 10; }
   .main-nav .main-nav-header {
-    height: 80px;
-    width: 100%; }
+    height: 80px; }
     .main-nav .main-nav-header h3 {
       color: #354435;
       font-size: 1.2em;
@@ -116,8 +100,6 @@ a {
       display: inline-block; }
     .main-nav .main-nav-container li span {
       padding: 0 10px; }
-  .main-nav .main-nav-container .sub-nav {
-    display: none; }
   .main-nav .main-nav-container .split-li {
     display: flex;
     justify-content: flex-start;
@@ -133,10 +115,24 @@ a {
     padding: 15px 0;
     max-height: 45px; }
 
+.sub-nav-toggle {
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  width: 90%; }
+
+.admin-nav-toggle {
+  display: none;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  width: 90%; }
+
 .sub-nav {
   background: #003e62;
-  max-width: 80%;
-  margin-left: auto;
   z-index: 20; }
   .sub-nav .sub-nav-icons {
     margin-left: auto;

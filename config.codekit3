@@ -108,6 +108,13 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/test.html",
+		"oF": 0
+		},
 	"\/WireFrame\/Adminstration.png": {
 		"ft": 32768,
 		"iS": 22579,
