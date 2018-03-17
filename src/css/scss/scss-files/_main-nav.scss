@@ -1,21 +1,26 @@
 .main-nav {
   position: absolute;
-  min-height: 100vh;
   width: 100vw;
-  //   display: none;
   background: turquoise;
   z-index: 1;
   .main-nav-header {
     height: 80px;
-    // width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../img/plane.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
 
     h3 {
-      color: #354435;
+      color: #fff;
       font-size: 1.2em;
       padding: 10px;
     }
   }
   .main-nav-container {
+    min-height: 100vh;
+    position: relative;
     li {
       display: flex;
       justify-content: flex-start;
@@ -52,27 +57,25 @@
 
 // Sub Nav Style
 .sub-nav-toggle {
-  //   display: none;
+  display: none;
   position: absolute;
   top: 0%;
   right: 0%;
-  height: 100%;
+  min-height: 100%;
   width: 90%;
   z-index: 2;
 }
 .admin-nav-toggle {
-  //   display: none;
+  display: none;
   position: absolute;
   top: 0%;
   right: 0%;
-  height: 100%;
+  min-height: 100%;
   width: 90%;
   z-index: 2;
 }
 .sub-nav {
-  //   display: none;
   background: rgb(0, 62, 98);
-  z-index: 20;
 
   .sub-nav-icons {
     margin-left: auto;

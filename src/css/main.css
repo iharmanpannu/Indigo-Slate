@@ -40,10 +40,9 @@ a {
   .main-header .main-header-menu {
     width: 100%;
     height: 60px;
-    background: #d1d188; }
+    background: #313033; }
     .main-header .main-header-menu .main-header-ul {
-      display: inline-flex;
-      justify-items: center; }
+      position: relative; }
       .main-header .main-header-menu .main-header-ul h2 {
         padding: 15px 0 15px 15px;
         font-size: 1.5em; }
@@ -81,59 +80,67 @@ a {
 
 .main-nav {
   position: absolute;
-  min-height: 100vh;
   width: 100vw;
   background: turquoise;
   z-index: 1; }
   .main-nav .main-nav-header {
-    height: 80px; }
+    height: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/plane.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px; }
     .main-nav .main-nav-header h3 {
-      color: #354435;
+      color: #fff;
       font-size: 1.2em;
       padding: 10px; }
-  .main-nav .main-nav-container li {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center; }
-    .main-nav .main-nav-container li a {
-      text-align: left;
-      display: inline-block; }
-    .main-nav .main-nav-container li span {
-      padding: 0 10px; }
-  .main-nav .main-nav-container .split-li {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.527); }
-    .main-nav .main-nav-container .split-li .main-nav-spans {
-      background: rgba(50, 177, 164, 0.561);
-      margin-left: auto;
-      padding: 10px 20px;
-      font-size: 1.7em;
+  .main-nav .main-nav-container {
+    min-height: 100vh;
+    position: relative; }
+    .main-nav .main-nav-container li {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center; }
+      .main-nav .main-nav-container li a {
+        text-align: left;
+        display: inline-block; }
+      .main-nav .main-nav-container li span {
+        padding: 0 10px; }
+    .main-nav .main-nav-container .split-li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.527); }
+      .main-nav .main-nav-container .split-li .main-nav-spans {
+        background: rgba(50, 177, 164, 0.561);
+        margin-left: auto;
+        padding: 10px 20px;
+        font-size: 1.7em;
+        max-height: 45px; }
+    .main-nav .main-nav-container .no-arrow-li {
+      padding: 15px 0;
       max-height: 45px; }
-  .main-nav .main-nav-container .no-arrow-li {
-    padding: 15px 0;
-    max-height: 45px; }
 
 .sub-nav-toggle {
+  display: none;
   position: absolute;
   top: 0%;
   right: 0%;
-  height: 100%;
+  min-height: 100%;
   width: 90%;
   z-index: 2; }
 
 .admin-nav-toggle {
+  display: none;
   position: absolute;
   top: 0%;
   right: 0%;
-  height: 100%;
+  min-height: 100%;
   width: 90%;
   z-index: 2; }
 
 .sub-nav {
-  background: #003e62;
-  z-index: 20; }
+  background: #003e62; }
   .sub-nav .sub-nav-icons {
     margin-left: auto;
     padding: 10px 18px;

@@ -4,10 +4,10 @@
   .main-header-menu {
     width: 100%;
     height: 60px;
-    background: rgb(209, 209, 136);
+    background: #313033;
+
     .main-header-ul {
-      display: inline-flex;
-      justify-items: center;
+      position: relative;
       h2 {
         padding: 15px 0 15px 15px;
         font-size: 1.5em;
