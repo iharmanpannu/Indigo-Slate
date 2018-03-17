@@ -89,7 +89,8 @@
                                                             Reporting
                                                         </span>
 
-                                                        <a @click="repNavUl =!repNavUl" class="main-nav-spans" href="#">
+                                                        <a @click="repNavUl =!repNavUl, rotateDropDown =!rotateDropDown" v-bind:class="{ rotateDropDown: rotateDropDown }" class="main-nav-spans"
+                                                            href="#">
                                                             <i class="fas fa-angle-down"></i>
                                                         </a>
                                                     </li>

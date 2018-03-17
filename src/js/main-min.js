@@ -1,1 +1,1 @@
-new Vue({el:"#app",data:{visible:!1,home:!0,show:!1,active:!1,subNavActive:!1,safNavShow:!1,repNavUl:!1,admNavShow:!1},methods:{hideNav:function(){if(!admNavShow)return!1===admNavShow}}});
+new Vue({el:"#app",data:{visible:!1,home:!0,show:!1,active:!1,subNavActive:!1,safNavShow:!1,repNavUl:!1,admNavShow:!1,rotateDropDown:!1}});
