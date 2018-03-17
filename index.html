@@ -36,7 +36,8 @@
                     <nav class="main-nav" v-if="show">
                         <!-- Main nav header and title  -->
                         <div class="main-nav-header">
-                            <h3>Hello User</h3>
+                            <h2>Hello User</h2>
+                            <h3>Welcome Back</h3>
                         </div>
                         <div class="main-nav-container">
                             <!-- Main navigation ul list below  -->
@@ -157,7 +158,7 @@
                                             <i class="fas fa-angle-right"></i>
                                         </a>
                                     </li>
-                                    <transition>
+                                    <transition name="slide-right">
                                         <div class="sub-nav admin-nav-toggle" v-if="admNavShow">
                                             <div class="sub-nav-header">
                                                 <h3>
