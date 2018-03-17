@@ -153,86 +153,87 @@
                                             <i class="fas fa-user"></i>
                                         </span>
                                         ADMINSTRATION
-                                        <a class="main-nav-spans" href="#">
+                                        <a class="main-nav-spans" @click="admNavShow = !admNavShow" href="#">
                                             <i class="fas fa-angle-right"></i>
                                         </a>
                                     </li>
+                                    <transition>
+                                        <div class="sub-nav admin-nav-toggle" v-if="admNavShow">
+                                            <div class="sub-nav-header">
+                                                <h3>
+                                                    <li class="split-li">
+                                                        <span>
+                                                            ADMINSTRATION
+                                                        </span>
 
-                                    <div class="sub-nav admin-nav-toggle">
-                                        <div class="sub-nav-header">
-                                            <h3>
-                                                <li class="split-li">
-                                                    <span>
-                                                        ADMINSTRATION
-                                                    </span>
+                                                        <a class="sub-nav-icons" href="#">
+                                                            <i class="fas fa-times"></i>
+                                                        </a>
+                                                    </li>
 
-                                                    <a class="sub-nav-icons" href="#">
-                                                        <i class="fas fa-times"></i>
-                                                    </a>
+                                                </h3>
+                                            </div>
+                                            <ul>
+
+                                                <li>
+                                                    <li class="split-li">
+                                                        <span>
+                                                            OJI and Leaves
+                                                        </span>
+                                                        <a class="main-nav-spans" href="#">
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                    </li>
+
+                                                </li>
+                                                <li>
+                                                    <li class="split-li">
+                                                        <span>
+                                                            Pay and Benefits
+                                                        </span>
+                                                        <a class="main-nav-spans" href="#">
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                    </li>
+
+                                                </li>
+                                                <li>
+                                                    <li class="split-li">
+                                                        <span>
+                                                            Performace
+                                                        </span>
+                                                        <a class="main-nav-spans" href="#">
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                    </li>
+
+                                                </li>
+                                                <li>
+                                                    <li class="sub-first-nav-li">
+                                                        <a href="#">Inflight Resource Directory</a>
+                                                    </li>
+
+                                                </li>
+                                                <li>
+                                                    <li class="split-li">
+                                                        <span>
+                                                            Mobile and Web
+                                                        </span>
+                                                        <a class="main-nav-spans" href="#">
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                    </li>
+
+                                                </li>
+                                                <li>
+                                                    <li class="sub-first-nav-li">
+                                                        <a href="#">AFA</a>
+                                                    </li>
                                                 </li>
 
-                                            </h3>
+                                            </ul>
                                         </div>
-                                        <ul>
-
-                                            <li>
-                                                <li class="split-li">
-                                                    <span>
-                                                        OJI and Leaves
-                                                    </span>
-                                                    <a class="main-nav-spans" href="#">
-                                                        <i class="fas fa-angle-down"></i>
-                                                    </a>
-                                                </li>
-
-                                            </li>
-                                            <li>
-                                                <li class="split-li">
-                                                    <span>
-                                                        Pay and Benefits
-                                                    </span>
-                                                    <a class="main-nav-spans" href="#">
-                                                        <i class="fas fa-angle-down"></i>
-                                                    </a>
-                                                </li>
-
-                                            </li>
-                                            <li>
-                                                <li class="split-li">
-                                                    <span>
-                                                        Performace
-                                                    </span>
-                                                    <a class="main-nav-spans" href="#">
-                                                        <i class="fas fa-angle-down"></i>
-                                                    </a>
-                                                </li>
-
-                                            </li>
-                                            <li>
-                                                <li class="sub-first-nav-li">
-                                                    <a href="#">Inflight Resource Directory</a>
-                                                </li>
-
-                                            </li>
-                                            <li>
-                                                <li class="split-li">
-                                                    <span>
-                                                        Mobile and Web
-                                                    </span>
-                                                    <a class="main-nav-spans" href="#">
-                                                        <i class="fas fa-angle-down"></i>
-                                                    </a>
-                                                </li>
-
-                                            </li>
-                                            <li>
-                                                <li class="sub-first-nav-li">
-                                                    <a href="#">AFA</a>
-                                                </li>
-                                            </li>
-
-                                        </ul>
-                                    </div>
+                                    </transition>
                                 </li>
                                 <li>
                                     <li class="split-li ">

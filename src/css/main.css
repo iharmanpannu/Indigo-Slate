@@ -24,8 +24,8 @@
 
 .rep-nav-enter-active,
 .rep-nav-leave-active {
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   display: block; }
 
 .rep-nav-leave-to,
@@ -182,7 +182,6 @@ a {
   z-index: 2; }
 
 .admin-nav-toggle {
-  display: none;
   position: absolute;
   top: 0%;
   right: 0%;
