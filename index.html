@@ -22,17 +22,8 @@
                         Indigo
                     </h2>
                     <h2>
-                        <a id="hamburger" class="nav-toggle" @click="show = !show, $event.target.classList.toggle('active')">
+                        <a class="nav-toggle" v-bind:class="{ active: active }" @click="show = !show, active = !active">
                             <span></span>
-                            <!-- <i class="fas fa-bars"></i> -->
-                            <!-- <div @click="show = !show, $event.target.classList.toggle('open')" id="nav-icon2">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div> -->
                         </a>
                     </h2>
                 </div>
@@ -40,8 +31,6 @@
             <div class="container">
                 <!-- Main nav starts here  -->
                 <transition name="slide-fade">
-
-
                     <nav class="main-nav" v-if="show">
                         <!-- Main nav header and title  -->
                         <div class="main-nav-header">

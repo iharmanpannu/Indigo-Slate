@@ -7,7 +7,8 @@
 .slide-fade-leave-active {
   transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1); }
 
-.slide-fade-enter, .slide-fade-leave-to {
+.slide-fade-enter,
+.slide-fade-leave-to {
   transform: translateX(20px);
   opacity: 0; }
 
@@ -91,7 +92,7 @@ a {
     height: 5px;
     background: #fff;
     border-radius: 1px;
-    transition: all 0.5s; }
+    transition: all 0.4s; }
   .nav-toggle span:before {
     top: -10px; }
   .nav-toggle span:after {

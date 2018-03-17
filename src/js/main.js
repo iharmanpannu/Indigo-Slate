@@ -4,6 +4,7 @@ new Vue({
   data: {
     visible: false,
     home: true,
-    show: false
+    show: false,
+    active: false
   }
 });
