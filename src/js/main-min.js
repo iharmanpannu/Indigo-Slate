@@ -1,1 +1,1 @@
-new Vue({el:"#app",data:{visible:!1,home:!0,show:!1,active:!1,subNavActive:!1,subNavShow:!1}});
+new Vue({el:"#app",data:{visible:!1,home:!0,show:!1,active:!1,subNavActive:!1,safNavShow:!1}});

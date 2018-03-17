@@ -15,18 +15,18 @@
 .active {
   opacity: 1; }
 
-.subNavActive {
-  transform: translateY(180); }
-
 .slide-right-enter-active {
   transition: all 0.3s ease; }
 
 .slide-right-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1); }
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1); }
 
-.slide-right-enter,
+.slide-right-enter {
+  transform: translateY(50px);
+  opacity: 0; }
+
 .slide-right-leave-to {
-  transform: translateX(20px);
+  transform: translateY(-50px);
   opacity: 0; }
 
 html,
@@ -168,8 +168,7 @@ a {
       padding: 15px 0;
       max-height: 45px; }
 
-.sub-nav-toggle {
-  display: none;
+.saf-nav-toggle {
   position: absolute;
   top: 0%;
   right: 0%;

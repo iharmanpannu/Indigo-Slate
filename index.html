@@ -59,7 +59,7 @@
                                             <i class="fas fa-handshake"></i>
                                         </span>
                                         SAFETY
-                                        <a class="main-nav-spans" v-bind:class="{ subNavActive: subNavActive }" @click="subNavShow = !subNavShow, subNavActive = !subNavActive"
+                                        <a class="main-nav-spans"  @click="safNavShow = !safNavShow"
                                             href="#">
                                             <i class="fas fa-angle-right"></i>
                                         </a>
@@ -67,7 +67,7 @@
                                     <!-- Sub nav transition below -->
                                     <transition name="slide-right">
                                         <!-- vue animation if/else below  -->
-                                        <div class="sub-nav sub-nav-toggle" v-if="subNavShow">
+                                        <div class="sub-nav saf-nav-toggle" v-if="safNavShow">
                                             <div class="sub-nav-header ">
                                                 <h3>
                                                     <li class="split-li">
@@ -75,7 +75,7 @@
                                                             SAFETY
                                                         </span>
 
-                                                        <a class="sub-nav-icons" href="#">
+                                                        <a @click="safNavShow = !safNavShow" class="sub-nav-icons" href="#">
                                                             <i class="fas fa-times"></i>
                                                         </a>
                                                     </li>
