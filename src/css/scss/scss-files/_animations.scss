@@ -15,19 +15,19 @@
   opacity: 1;
 }
 
-
-
-.slide-right-enter-active {
-  transition: all 0.3s ease;
-}
+.slide-right-enter-active,
 .slide-right-leave-active {
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.4s cubic-bezier(1, 0.5, 0.8, 1);
 }
+
+// .slide-right-enter-active {
+//   transition: all 0.1s ease-in-out;
+// }
+// .slide-right-leave-active {
+//   transition: transform 1s ease-in-out;
+// }
+.slide-right-leave-to,
 .slide-right-enter {
-  transform: translateY(50px);
-  opacity: 0;
-}
-.slide-right-leave-to {
-  transform: translateY(-50px);
-  opacity: 0;
+  transform: translateX(100%);
+  // opacity: 1;
 }
