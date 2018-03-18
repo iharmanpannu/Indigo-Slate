@@ -1,6 +1,10 @@
+import { directive as onClickaway } from 'vue-clickaway';
+
 new Vue({
   el: '#app',
-
+  directives: {
+    onClickaway: onClickaway
+  },
   data: {
     visible: false,
     home: true,
@@ -12,5 +16,10 @@ new Vue({
     admNavShow: false,
     rotateDropDown: false
   },
-  methods: {}
+  methods: {
+    away: function() {
+      this.safNavShow = false;
+      console.log('clicked away');
+    }
+  }
 });

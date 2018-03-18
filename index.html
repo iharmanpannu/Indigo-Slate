@@ -54,12 +54,12 @@
                                 </li>
 
                                 <li>
-                                    <li class="split-li">
+                                    <li v-on-clickaway="safNavShow" @click="safNavShow = !safNavShow" class="split-li">
                                         <span>
                                             <i class="fas fa-handshake"></i>
                                         </span>
                                         SAFETY
-                                        <a class="main-nav-spans" @click="safNavShow = !safNavShow" href="#">
+                                        <a class="main-nav-spans" href="#">
                                             <i class="fas fa-angle-right"></i>
                                         </a>
                                     </li>

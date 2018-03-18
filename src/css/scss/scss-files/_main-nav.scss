@@ -1,24 +1,12 @@
 .main-nav {
   position: absolute;
   width: 100vw;
-  background: #56ccf2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2f80ed,
-    #56ccf2
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2f80ed,
-    #56ccf2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  // background: linear-gradient(to right, #fff, #fff, rgb(255, 225, 230));
+  background: #56ccf2;
+  background: -webkit-linear-gradient(to right, #2f80ed, #56ccf2);
+  background: linear-gradient(to right, #2f80ed, #56ccf2);
   z-index: 1;
   color: #313033;
-  // a {
-  //   color: #313033;
-  // }
+
   .main-nav-header {
     display: flex;
     flex-direction: column;
@@ -28,7 +16,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: 1px solid #ce9c808c;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     height: 150px;
     h2,
     h3 {
@@ -44,15 +32,10 @@
       display: flex;
       justify-content: flex-start;
       align-content: center;
-      // &:hover {
-      //   background: #ce9c808c;
-      // }
+
       a {
         text-align: left;
         display: inline-block;
-        // &:hover {
-        //   background: #ce9c808c;
-        // }
       }
       span {
         padding: 0 10px;
@@ -62,20 +45,9 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      border-bottom: 1px solid #ce9c808c;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.09);
       .main-nav-spans {
-        background: #88e0fd; /* fallback for old browsers */
-        // background: -webkit-linear-gradient(
-        //   to left,
-        //   #2f80ed,
-        //   #56ccf2
-        // ); /* Chrome 10-25, Safari 5.1-6 */
-        // background: linear-gradient(
-        //   to left,
-        //   #2f80ed,
-        //   #56ccf2
-        // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+        background: #26b2e0;
         margin-left: auto;
         padding: 10px 20px;
         font-size: 1.7em;
@@ -113,16 +85,14 @@
 .sub-nav {
   background: #9cecfb; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to bottom,
+    to right,
     #0052d4,
-    #65c7f7,
-    #9cecfb
+    #3d96f0
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to bottom,
+    to right,
     #0052d4,
-    #65c7f7,
-    #9cecfb
+    #3d96f0
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   .sub-nav-icons {
@@ -132,15 +102,14 @@
     max-height: 45px;
   }
   .sub-nav-ul {
-    border-left: 1px solid #ce9c808c;
+    // padding: 1em 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     li {
-      background: #ffafbd;
-      background: -webkit-linear-gradient(to right, #ffc3a0, #ffafbd);
-      background: linear-gradient(to right, #ffc3a0, #ffafbd);
+      background: #0baaff;
       padding: 15px 18px;
       font-size: 1.1em;
       max-height: 45px;
-      border-bottom: 1px solid #ce9c808c;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       &:hover {
         cursor: pointer;
       }
@@ -151,7 +120,7 @@
     max-height: 45px;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #ce9c808c;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
 .rotateDropDown {
