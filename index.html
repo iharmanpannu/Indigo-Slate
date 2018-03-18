@@ -8,19 +8,18 @@
     <title>Indigo Slate</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
         crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/main.css">
 </head>
 
 <body>
     <div id="app" class="wrapper">
+
         <header class="main-header">
+
             <div class="main-header-menu ">
                 <div class="main-header-ul">
-                    <h2>
-                        Indigo
-                    </h2>
+                    <img id="logo" src="src/img/logo.svg" alt="">
                     <h2>
                         <a class="nav-toggle" v-bind:class="{ active: active }" @click="show = !show, active = !active">
                             <span></span>
@@ -127,13 +126,13 @@
                                                 </li>
                                                 <li>
                                                     <li class="sub-first-nav-li">
-                                                        <a href="#">Known Crewmember</a>
+                                                        Known Crewmember
                                                     </li>
                                                 </li>
 
                                                 <li>
                                                     <li class="sub-first-nav-li">
-                                                        <a href="#"> Products Safety Data Search</a>
+                                                        Products Safety Data Search
                                                     </li>
 
                                                 </li>
@@ -146,7 +145,8 @@
                                         <span>
                                             <i class="fas fa-users"></i>
                                         </span>
-                                        <a href="#">TRAINING</a>
+                                        TRAINING
+
                                     </li>
                                 </li>
                                 <li>
@@ -212,7 +212,8 @@
                                                 </li>
                                                 <li>
                                                     <li class="sub-first-nav-li">
-                                                        <a href="#">Inflight Resource Directory</a>
+                                                        Inflight Resource Directory
+
                                                     </li>
 
                                                 </li>
@@ -229,7 +230,7 @@
                                                 </li>
                                                 <li>
                                                     <li class="sub-first-nav-li">
-                                                        <a href="#">AFA</a>
+                                                        AFA
                                                     </li>
                                                 </li>
 
@@ -255,7 +256,7 @@
                                         <span>
                                             <i class="fas fa-bed"></i>
                                         </span>
-                                        <a href="#">HOTELS</a>
+                                        HOTELS
                                     </li>
 
                                 </li>
@@ -264,7 +265,7 @@
                                         <span>
                                             <i class="fas fa-home"></i>
                                         </span>
-                                        <a href="#">MY BASE</a>
+                                        MY BASE
                                     </li>
 
                                 </li>
@@ -273,7 +274,7 @@
                                         <span>
                                             <i class="fas fa-certificate"></i>
                                         </span>
-                                        <a href="#">RECOGNITION</a>
+                                        RECOGNITION
                                     </li>
 
                                 </li>
@@ -282,7 +283,7 @@
                                         <span>
                                             <i class="fas fa-male"></i>
                                         </span>
-                                        <a href="#">MY LEADERSHIP TEAM</a>
+                                        MY LEADERSHIP TEAM
                                     </li>
 
                                 </li>
@@ -297,9 +298,14 @@
         <div class="home-page" v-if="home">
             <h1>Expect Greatness</h1>
             <h4>Let's Build Something Great Together</h4>
+            <div class="styles-background">
+                <div class="dots dotOne"></div>
+                <div class="dots dotTwo"></div>
+            </div>
+
         </div>
     </div>
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="src/js/main-min.js"></script>
 </body>

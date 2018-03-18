@@ -1,5 +1,3 @@
-/* Enter and leave animations can use different */
-/* durations and timing functions.              */
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=Paytone+One");
 .slide-fade-enter-active,
@@ -8,8 +6,7 @@
 
 .slide-fade-enter,
 .slide-fade-leave-to {
-  transform: translateX(-100%);
-  opacity: 0.7; }
+  transform: translateX(-100%); }
 
 .active {
   opacity: 1; }
@@ -25,22 +22,40 @@
 .rep-nav-enter-active,
 .rep-nav-leave-active {
   -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  display: block; }
+  transition: all 0.4s ease-in-out; }
 
 .rep-nav-leave-to,
 .rep-nav-enter {
-  transform: translateY(-20%); }
+  transform: translateY(-20%);
+  opacity: 0; }
+
+ul li {
+  text-align: center;
+  transition: margin-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear;
+  -webkit-transition: margin-left 0.3s linear, font-weight 0.2s linear, color 0.3s linear; }
+
+ul li:hover {
+  margin-left: 20px;
+  font-weight: 600;
+  cursor: pointer; }
+
+a:hover {
+  font-weight: 600; }
 
 html,
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   box-sizing: border-box;
-  color: #fff;
   word-spacing: 3px;
   line-height: 1.2;
-  letter-spacing: 0.3; }
+  letter-spacing: 0.3;
+  background: #9cecfb;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0052d4, #65c7f7, #9cecfb);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0052d4, #65c7f7, #9cecfb);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 h1,
 h2,
@@ -54,21 +69,13 @@ h6 {
 li {
   list-style-type: none;
   font-weight: 500;
-  font-size: 1.2em; }
-  li:hover {
-    color: #fff;
-    background: #2a2a2c;
-    cursor: pointer; }
+  font-size: 1.2em;
+  color: #fff; }
 
 a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
   font-weight: 500; }
-  a:hover {
-    color: #fff; }
-
-.wrapper {
-  background: blanchedalmond; }
 
 .home-page {
   text-align: center;
@@ -78,12 +85,12 @@ a {
   height: 100vh;
   width: 100%;
   align-items: center;
-  z-index: -1;
-  background: #d66d75;
+  z-index: 1;
+  background: #9cecfb;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #e29587, #fa9ea5);
+  background: -webkit-linear-gradient(to right, #0052d4, #65c7f7, #9cecfb);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #e29587, #fa9ea5);
+  background: linear-gradient(to right, #0052d4, #65c7f7, #9cecfb);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .home-page h1 {
     font-size: 2em;
@@ -94,20 +101,44 @@ a {
 .container {
   position: relative; }
 
+#logo {
+  max-width: 100px;
+  padding: 15px; }
+
+.styles-background {
+  position: relative;
+  overflow: hidden; }
+  .styles-background .dots {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    z-index: 0; }
+  .styles-background .dotOne {
+    top: 500px;
+    left: -320px; }
+  .styles-background .dotTwo {
+    top: 0px;
+    right: -300px; }
+
 .main-header {
   display: block; }
   .main-header .main-header-menu {
     width: 100%;
-    height: 60px;
-    background: #313033; }
+    height: 60px; }
     .main-header .main-header-menu .main-header-ul {
       position: relative; }
+      .main-header .main-header-menu .main-header-ul a:hover {
+        background: transparent;
+        cursor: pointer; }
       .main-header .main-header-menu .main-header-ul h2 {
         padding: 15px 0 15px 15px;
         font-size: 1.5em; }
 
 .nav-toggle {
   position: absolute;
+  z-index: 3;
   top: 20px;
   right: 20px;
   z-index: 10;
@@ -123,8 +154,11 @@ a {
     background: #fff;
     border-radius: 1px;
     transition: all 0.4s; }
+  .nav-toggle span {
+    width: 25px; }
   .nav-toggle span:before {
-    top: -10px; }
+    top: -10px;
+    width: 15px; }
   .nav-toggle span:after {
     bottom: -10px; }
   .nav-toggle.active span {
@@ -133,6 +167,7 @@ a {
   .nav-toggle.active span:after {
     top: 0; }
   .nav-toggle.active span:before {
+    width: 35px;
     transform: rotate(45deg); }
   .nav-toggle.active span:after {
     top: 10px;
@@ -144,13 +179,14 @@ a {
 .main-nav {
   position: absolute;
   width: 100vw;
-  background: #ffafbd;
-  background: -webkit-linear-gradient(to right, #ffc3a0, #ffafbd);
-  background: linear-gradient(to right, #ffc3a0, #ffafbd);
+  background: #56ccf2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2f80ed, #56ccf2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2f80ed, #56ccf2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   z-index: 1;
   color: #313033; }
-  .main-nav a {
-    color: #313033; }
   .main-nav .main-nav-header {
     display: flex;
     flex-direction: column;
@@ -164,7 +200,6 @@ a {
     height: 150px; }
     .main-nav .main-nav-header h2,
     .main-nav .main-nav-header h3 {
-      color: #fff;
       font-size: 1.6em;
       margin-bottom: 5px;
       text-shadow: 0 0 10px rgba(2, 2, 2, 0.2); }
@@ -175,13 +210,9 @@ a {
       display: flex;
       justify-content: flex-start;
       align-content: center; }
-      .main-nav .main-nav-container li:hover {
-        background: #ce9c808c; }
       .main-nav .main-nav-container li a {
         text-align: left;
         display: inline-block; }
-        .main-nav .main-nav-container li a:hover {
-          background: #ce9c808c; }
       .main-nav .main-nav-container li span {
         padding: 0 10px; }
     .main-nav .main-nav-container .split-li {
@@ -190,9 +221,8 @@ a {
       align-items: center;
       border-bottom: 1px solid #ce9c808c; }
       .main-nav .main-nav-container .split-li .main-nav-spans {
-        background: #fa9ea5;
-        background: -webkit-linear-gradient(to right, #e29587, #fa9ea5);
-        background: linear-gradient(to right, #e29587, #fa9ea5);
+        background: #88e0fd;
+        /* fallback for old browsers */
         margin-left: auto;
         padding: 10px 20px;
         font-size: 1.7em;
@@ -218,9 +248,12 @@ a {
   z-index: 2; }
 
 .sub-nav {
-  background: #fa9ea5;
-  background: -webkit-linear-gradient(to right, #e29587, #fa9ea5);
-  background: linear-gradient(to right, #e29587, #fa9ea5); }
+  background: #9cecfb;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #0052d4, #65c7f7, #9cecfb);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #0052d4, #65c7f7, #9cecfb);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .sub-nav .sub-nav-icons {
     margin-left: auto;
     padding: 10px 18px;
@@ -236,6 +269,8 @@ a {
       font-size: 1.1em;
       max-height: 45px;
       border-bottom: 1px solid #ce9c808c; }
+      .sub-nav .sub-nav-ul li:hover {
+        cursor: pointer; }
   .sub-nav .sub-first-nav-li {
     padding: 15px 10px;
     max-height: 45px;

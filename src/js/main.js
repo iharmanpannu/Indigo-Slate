@@ -11,5 +11,6 @@ new Vue({
     repNavUl: false,
     admNavShow: false,
     rotateDropDown: false
-  }
+  },
+  methods: {}
 });

@@ -8,10 +8,22 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   box-sizing: border-box;
-  color: #fff;
   word-spacing: 3px;
   line-height: 1.2;
   letter-spacing: 0.3;
+  background: #9cecfb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0052d4,
+    #65c7f7,
+    #9cecfb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0052d4,
+    #65c7f7,
+    #9cecfb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 h1,
 h2,
@@ -26,24 +38,28 @@ li {
   list-style-type: none;
   font-weight: 500;
   font-size: 1.2em;
-  &:hover {
-    color: #fff;
-    background: #2a2a2c;
-    cursor: pointer;
-  }
+  color: #fff;
 }
 a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
   font-weight: 500;
-  &:hover {
-    color: #fff;
-  }
 }
-.wrapper {
-  background: blanchedalmond;
-  // position: relative;
-}
+// .wrapper {
+//   background: #9cecfb; /* fallback for old browsers */
+//   background: -webkit-linear-gradient(
+//     to right,
+//     #0052d4,
+//     #65c7f7,
+//     #9cecfb
+//   ); /* Chrome 10-25, Safari 5.1-6 */
+//   background: linear-gradient(
+//     to right,
+//     #0052d4,
+//     #65c7f7,
+//     #9cecfb
+//   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// }
 
 .home-page {
   text-align: center;
@@ -53,17 +69,19 @@ a {
   height: 100vh;
   width: 100%;
   align-items: center;
-  z-index: -1;
-  background: #d66d75; /* fallback for old browsers */
+  z-index: 1;
+  background: #9cecfb; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #e29587,
-    #fa9ea5
+    #0052d4,
+    #65c7f7,
+    #9cecfb
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #e29587,
-    #fa9ea5
+    #0052d4,
+    #65c7f7,
+    #9cecfb
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   //   display: none;
@@ -77,4 +95,30 @@ a {
 }
 .container {
   position: relative;
+}
+#logo {
+  max-width: 100px;
+  padding: 15px;
+}
+
+.styles-background {
+  position: relative;
+  overflow: hidden;
+  .dots {
+    position: fixed;
+
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    z-index: 0;
+  }
+  .dotOne {
+    top: 500px;
+    left: -320px;
+  }
+  .dotTwo {
+    top: 0px;
+    right: -300px;
+  }
 }
